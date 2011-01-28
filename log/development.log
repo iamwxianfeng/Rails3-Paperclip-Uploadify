@@ -2178,3 +2178,188 @@ Rendered collection (0.1ms)
 Rendered users/_show.html.erb (0.9ms)
 Rendered users/show.html.erb within layouts/application (12.2ms)
 Completed 200 OK in 42ms (Views: 15.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-28 13:07:24 -0500
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (27.0ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 104ms (Views: 14.7ms | ActiveRecord: 27.0ms)
+
+
+Started GET "/users/8" for 127.0.0.1 at 2011-01-28 13:07:32 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSQL (1.9ms)[0m  SHOW TABLES
+  [1m[36mUser Load (41.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 8) LIMIT 1[0m
+  [1m[35mUpload Load (3.1ms)[0m  SELECT `uploads`.* FROM `uploads` WHERE (`uploads`.user_id = 8)
+Rendered uploads/_upload.html.erb (5.2ms)
+Rendered users/_show.html.erb (1.0ms)
+Rendered users/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 121ms (Views: 17.9ms | ActiveRecord: 46.4ms)
+
+
+Started GET "/system/photos/11/original/images.jpg?1284839906" for 127.0.0.1 at 2011-01-28 13:07:33 -0500
+
+ActionController::RoutingError (No route matches "/system/photos/11/original/images.jpg"):
+  
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+
+Started GET "/system/photos/12/original/cute-baby-sticking-tongue-out.jpg?1284909619" for 127.0.0.1 at 2011-01-28 13:07:33 -0500
+
+ActionController::RoutingError (No route matches "/system/photos/12/original/cute-baby-sticking-tongue-out.jpg"):
+  
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/system/photos/13/original/Frog-Love.jpg?1284909692" for 127.0.0.1 at 2011-01-28 13:07:33 -0500
+
+ActionController::RoutingError (No route matches "/system/photos/13/original/Frog-Love.jpg"):
+  
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/system/photos/14/original/9.jpg?1284909756" for 127.0.0.1 at 2011-01-28 13:07:33 -0500
+
+ActionController::RoutingError (No route matches "/system/photos/14/original/9.jpg"):
+  
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/system/photos/15/original/Frog-Love.jpg?1284909971" for 127.0.0.1 at 2011-01-28 13:07:33 -0500
+
+ActionController::RoutingError (No route matches "/system/photos/15/original/Frog-Love.jpg"):
+  
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/system/photos/16/original/images.jpg?1284910206" for 127.0.0.1 at 2011-01-28 13:07:33 -0500
+
+ActionController::RoutingError (No route matches "/system/photos/16/original/images.jpg"):
+  
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2011-01-28 13:07:55 -0500
+  Processing by UploadsController#create as JSON
+  Parameters: {"Filename"=>"DSC_0042-1.JPG", "_uploadify_session"=>"BAh7B0kiD3Nlc3Npb25faWQGOgZFRiIlM2MwMTI5OTc5YTFmMzIxOTkwY2UzMmExNGRjYTIxMzdJIhBfY3NyZl90b2tlbgY7AEZJIjFKVElhNE1XbExicnJzd3Vjdyt0VFFyTTlVeHYzYUtOazFWVDV4SXlnM3hZPQY7AEY=--b9746ee85fbfa2e935a92b501b3dfd80b7cc8dd0", "folder"=>"/users/", "authenticity_token"=>"JTIa4MWlLbrrswucw+tTQrM9Uxv3aKNk1VT5xIyg3xY=", "user_id"=>"8", "_http_accept"=>"application/javascript", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000102d06058 @original_filename="DSC_0042-1.JPG", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"DSC_0042-1.JPG\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/RackMultipart20110128-8436-b5m254>>, "Upload"=>"Submit Query"}
+[paperclip] identify -format %wx%h '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13pt2fp.JPG[0]' 2>/dev/null
+[paperclip] convert '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13pt2fp.JPG[0]' -resize "300x300>" '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13pt2fp20110128-8436-u81p8m' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13pt2fp.JPG[0]' 2>/dev/null
+[paperclip] convert '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13pt2fp.JPG[0]' -resize "100x100>" '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13pt2fp20110128-8436-1tcrlqs' 2>/dev/null
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  describe `uploads`
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO `uploads` (`user_id`, `created_at`, `updated_at`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`) VALUES (8, '2011-01-28 18:07:56', '2011-01-28 18:07:56', 'DSC_0042-1.JPG', '[image/jpeg]', 425514, '2011-01-28 18:07:55')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/amitgaur/Programming/RailsApps/Rails3-Paperclip-Uploadify/public/system/photos/18/original/DSC_0042-1.JPG
+[paperclip] saving /Users/amitgaur/Programming/RailsApps/Rails3-Paperclip-Uploadify/public/system/photos/18/medium/DSC_0042-1.JPG
+[paperclip] saving /Users/amitgaur/Programming/RailsApps/Rails3-Paperclip-Uploadify/public/system/photos/18/thumb/DSC_0042-1.JPG
+  [1m[35mSQL (1.3ms)[0m  COMMIT
+Completed 200 OK in 1170ms (Views: 2.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/uploads/18" for 127.0.0.1 at 2011-01-28 13:07:57 -0500
+  Processing by UploadsController#show as JS
+  Parameters: {"id"=>"18"}
+  [1m[36mUpload Load (37.2ms)[0m  [1mSELECT `uploads`.* FROM `uploads` WHERE (`uploads`.`id` = 18) LIMIT 1[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 8)
+  [1m[36mUpload Load (0.5ms)[0m  [1mSELECT `uploads`.* FROM `uploads` WHERE (`uploads`.`user_id` = 8)[0m
+Rendered uploads/_upload.html.erb (2.4ms)
+Rendered uploads/show.js.erb (5.9ms)
+Completed 200 OK in 169ms (Views: 29.2ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-01-28 13:13:08 -0500
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT `users`.* FROM `users`
+Rendered users/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 19ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2011-01-28 13:13:10 -0500
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (58.4ms)
+Rendered users/new.html.erb within layouts/application (95.3ms)
+Completed 200 OK in 106ms (Views: 98.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-01-28 13:13:16 -0500
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JTIa4MWlLbrrswucw+tTQrM9Uxv3aKNk1VT5xIyg3xY=", "user"=>{"name"=>"t"}, "commit"=>"Create User"}
+  [1m[36mSQL (32.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.1ms)[0m  describe `users`
+  [1m[36mAREL (1.4ms)[0m  [1mINSERT INTO `users` (`name`, `created_at`, `updated_at`) VALUES ('t', '2011-01-28 18:13:16', '2011-01-28 18:13:16')[0m
+  [1m[35mSQL (1.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 56ms
+
+
+Started GET "/users/10" for 127.0.0.1 at 2011-01-28 13:13:16 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 10) LIMIT 1[0m
+  [1m[35mUpload Load (0.4ms)[0m  SELECT `uploads`.* FROM `uploads` WHERE (`uploads`.user_id = 10)
+Rendered collection (0.0ms)
+Rendered users/_show.html.erb (1.3ms)
+Rendered users/show.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 89ms (Views: 61.7ms | ActiveRecord: 40.6ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2011-01-28 13:13:25 -0500
+  Processing by UploadsController#create as JSON
+  Parameters: {"Filename"=>"DSC_0042-1.JPG", "_uploadify_session"=>"BAh7CEkiD3Nlc3Npb25faWQGOgZFRiIlM2MwMTI5OTc5YTFmMzIxOTkwY2UzMmExNGRjYTIxMzdJIhBfY3NyZl90b2tlbgY7AEZJIjFKVElhNE1XbExicnJzd3Vjdyt0VFFyTTlVeHYzYUtOazFWVDV4SXlnM3hZPQY7AEZJIgpmbGFzaAY7AEZJQzolQWN0aW9uRGlzcGF0Y2g6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlSSIjVXNlciB3YXMgc3VjY2Vzc2Z1bGx5IGNyZWF0ZWQuBjsARgY6CkB1c2VkbzoIU2V0BjoKQGhhc2h7AA==--abf8ed10f1a70f965223163af2b1789937e8da30", "authenticity_token"=>"JTIa4MWlLbrrswucw tTQrM9Uxv3aKNk1VT5xIyg3xY=", "user_id"=>"10", "_http_accept"=>"application/javascript", "folder"=>"/users/", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000102bea368 @original_filename="DSC_0042-1.JPG", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"DSC_0042-1.JPG\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/RackMultipart20110128-8436-1nzis2f>>, "Upload"=>"Submit Query"}
+Completed   in 0ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  app/middleware/flash_session_cookie_middleware.rb:17:in `call'
+
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.8ms)
+Rendered /Users/amitgaur/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (172.9ms)
+
+
+Started GET "/users/10" for 127.0.0.1 at 2011-01-28 13:13:35 -0500
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 10) LIMIT 1[0m
+  [1m[35mUpload Load (0.3ms)[0m  SELECT `uploads`.* FROM `uploads` WHERE (`uploads`.user_id = 10)
+Rendered collection (0.0ms)
+Rendered users/_show.html.erb (0.9ms)
+Rendered users/show.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 68ms (Views: 15.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/uploads" for 127.0.0.1 at 2011-01-28 13:13:43 -0500
+  Processing by UploadsController#create as JSON
+  Parameters: {"Filename"=>"DSC_0042-1.JPG", "user_id"=>"10", "_http_accept"=>"application/javascript", "folder"=>"/users/", "_uploadify_session"=>"BAh7CEkiD3Nlc3Npb25faWQGOgZFRiIlM2MwMTI5OTc5YTFmMzIxOTkwY2UzMmExNGRjYTIxMzdJIhBfY3NyZl90b2tlbgY7AEZJIjFKVElhNE1XbExicnJzd3Vjdyt0VFFyTTlVeHYzYUtOazFWVDV4SXlnM3hZPQY7AEZJIgpmbGFzaAY7AEZJQzolQWN0aW9uRGlzcGF0Y2g6OkZsYXNoOjpGbGFzaEhhc2h7BjoLbm90aWNlSSIjVXNlciB3YXMgc3VjY2Vzc2Z1bGx5IGNyZWF0ZWQuBjsARgY6CkB1c2VkbzoIU2V0BjoKQGhhc2h7BjsHVA==--3a77e26aaa97a32da8c50f53a5876ef3ece8e71c", "authenticity_token"=>"JTIa4MWlLbrrswucw+tTQrM9Uxv3aKNk1VT5xIyg3xY=", "Filedata"=>#<ActionDispatch::Http::UploadedFile:0x00000102d1e9c8 @original_filename="DSC_0042-1.JPG", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"Filedata\"; filename=\"DSC_0042-1.JPG\"\r\nContent-Type: application/octet-stream\r\n", @tempfile=#<File:/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/RackMultipart20110128-8436-psktoa>>, "Upload"=>"Submit Query"}
+[paperclip] identify -format %wx%h '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13iamas.JPG[0]' 2>/dev/null
+[paperclip] convert '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13iamas.JPG[0]' -resize "300x300>" '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13iamas20110128-8436-1hwp2i3' 2>/dev/null
+[paperclip] identify -format %wx%h '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13iamas.JPG[0]' 2>/dev/null
+[paperclip] convert '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13iamas.JPG[0]' -resize "100x100>" '/var/folders/8B/8BMxjHsRF9e+t2p5WyECrk+++TI/-Tmp-/stream20110128-8436-13iamas20110128-8436-1xko3o8' 2>/dev/null
+  [1m[36mSQL (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.8ms)[0m  describe `uploads`
+  [1m[36mAREL (1.3ms)[0m  [1mINSERT INTO `uploads` (`user_id`, `created_at`, `updated_at`, `photo_file_name`, `photo_content_type`, `photo_file_size`, `photo_updated_at`) VALUES (10, '2011-01-28 18:13:44', '2011-01-28 18:13:44', 'DSC_0042-1.JPG', '[image/jpeg]', 425514, '2011-01-28 18:13:43')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/amitgaur/Programming/RailsApps/Rails3-Paperclip-Uploadify/public/system/photos/19/original/DSC_0042-1.JPG
+[paperclip] saving /Users/amitgaur/Programming/RailsApps/Rails3-Paperclip-Uploadify/public/system/photos/19/medium/DSC_0042-1.JPG
+[paperclip] saving /Users/amitgaur/Programming/RailsApps/Rails3-Paperclip-Uploadify/public/system/photos/19/thumb/DSC_0042-1.JPG
+  [1m[35mSQL (1.1ms)[0m  COMMIT
+Completed 200 OK in 264ms (Views: 1.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/uploads/19" for 127.0.0.1 at 2011-01-28 13:13:44 -0500
+  Processing by UploadsController#show as JS
+  Parameters: {"id"=>"19"}
+  [1m[36mUpload Load (1.0ms)[0m  [1mSELECT `uploads`.* FROM `uploads` WHERE (`uploads`.`id` = 19) LIMIT 1[0m
+  [1m[35mUser Load (2.4ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 10)
+  [1m[36mUpload Load (0.5ms)[0m  [1mSELECT `uploads`.* FROM `uploads` WHERE (`uploads`.`user_id` = 10)[0m
+Rendered uploads/_upload.html.erb (1.2ms)
+Rendered uploads/show.js.erb (2.4ms)
+Completed 200 OK in 311ms (Views: 8.1ms | ActiveRecord: 3.9ms)
