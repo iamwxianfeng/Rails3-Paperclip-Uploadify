@@ -7,3 +7,6 @@ tips:
 this error because u not install imagemagick , install it:
 >sudo apt-get install imagemagick (ubuntu)
 >yum -y install imagemagick (centos)
+
+test installed:
+>convert --version
