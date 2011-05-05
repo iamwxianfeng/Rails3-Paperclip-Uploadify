@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
-gem 'paperclip'
-gem 'mime-types', :require => 'mime/types'
+gem 'mysql2' , '0.2.6'
+gem 'paperclip' , '2.3.11'
+gem 'mime-types', '1.16' ,:require => 'mime/types'
 
 # Use unicorn as the web server
 # gem 'unicorn'
