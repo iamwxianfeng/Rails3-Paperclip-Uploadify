@@ -1,3 +1,9 @@
-== Rails 3.0.3 -- Paperclip -- Uploadify
+== Rails 3.0.6 -- Paperclip -- Uploadify
 
 Simple app which lets you upload multiple files using Paperclip and Uploadify.
+
+tips:
+1, Paperclip image uploads in Rails - Paperclip::CommandNotFoundError
+this error because u not install imagemagick , install it:
+>sudo apt-get install imagemagick (ubuntu)
+>yum -y install imagemagick (centos)
